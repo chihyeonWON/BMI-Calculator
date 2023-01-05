@@ -26,3 +26,10 @@
 입력받은 값으로 Bmi를 계산한 후 아이콘과 글자로 결과를 보여주는 StatelessWidget으로 작성된 두 번째 화면
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210713779-05867828-5755-47d5-94d1-ac03b607797d.png)
+
+#### 키와 몸무게 입력창 생성
+```
+키와 몸무게를 입력하는 TextFormField를 Form 안에 작성하였습니다.
+키와 몸무게는 숫자만을 입력하는 기능으로 작성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210717458-14d91a8d-0bdb-4baa-9e4e-ced043164f2d.png)
