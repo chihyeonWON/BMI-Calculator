@@ -40,3 +40,19 @@
 아직까지는 검증 로직을 작성하지 않아 아무것도 동작하지 않는 버튼입니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210718891-2556dd56-b34b-4ea3-a0f0-8feec589d081.png)
+
+### 결과 화면 작성
+```
+결과 화면을 보여준 후에 변경되지 않으므로 StatelessWidget 클래스로 작성
+bmi 계산 결과 값에 따라 각각 다른 아이콘과 글자를 출력하도록 작성
+```
+
+#### bmi 값에 따른 결과값 (글자) 작성
+```
+bmi 계산 결과 값에 따라 고도 비만, 2단계 비만, 1단계 비만, 과체중, 정상, 저체중 
+6가지의 글자가 들어갈 Text 위젯을 작성하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210721287-6815d4f0-ffd1-4dbc-9de3-de60c493ee66.png)
+
+
+
