@@ -41,7 +41,16 @@ class _BmiMainState extends State<BmiMain> {
                 ),
                 keyboardType: TextInputType.number, // 숫자만 입력할 수 있음
               ),
-              )
+              SizedBox(
+                height:16.0,
+              ),
+              TextFormField(
+                decoration: InputDecoration( // 외곽선이 있고 힌트로 '몸무게'를 표시
+                  border:OutlineInputBorder(),
+                  hintText:'몸무게', // placeholder 몸무게
+                ),
+                keyboardType: TextInputType.number, // 숫자만 입력할 수 있음
+              ),
             ],
           ),
         ),
