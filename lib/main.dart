@@ -24,7 +24,11 @@ class BmiMain extends StatefulWidget {
 class _BmiMainState extends State<BmiMain> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar:AppBar(
+        title:Text('Bmi Calculator'),
+      ),
+    );
   }
 }
 
