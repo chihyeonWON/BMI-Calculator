@@ -30,7 +30,22 @@ class _BmiMainState extends State<BmiMain> {
       ),
       body: Container(
         padding:const EdgeInsets.all(16.0),
-      )
+        child: Form(
+          key:_formKey, // 키 할당
+          child: Column(
+            children:<Widget>[
+              TextFormField(
+                decoration: InputDecoration( // 외곽선이 있고 힌트로 '키'를 표시
+                  border:OutlineInputBorder(),
+                  hintText:'키', // placeholder 키
+                ),
+                keyboardType: TextInputType.number, // 숫자만 입력할 수 있음
+              ),
+              )
+            ],
+          ),
+        ),
+      ),
     );
   }
 }
