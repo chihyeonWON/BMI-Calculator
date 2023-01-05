@@ -89,6 +89,14 @@ class BmiResult extends StatelessWidget {
               '정상',
               style:TextStyle(fontSize:36),
             ),
+            SizedBox(
+              height:16,
+            ),
+            Icon( // TODO : 수정할 부분(아이콘)
+              Icons.sentiment_satisfied, // 만족하는 아이콘 표시
+              color:Colors.green,
+              size:100,
+            ),
           ],
         ),
       )
