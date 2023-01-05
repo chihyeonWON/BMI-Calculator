@@ -24,7 +24,7 @@ class BmiMain extends StatefulWidget {
 class _BmiMainState extends State<BmiMain> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
 
@@ -32,7 +32,7 @@ class _BmiMainState extends State<BmiMain> {
 class BmiResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold();
   }
 }
 
