@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BmiMain(),
+      home: BmiResult(173, 65),
     );
   }
 }
@@ -79,7 +79,20 @@ class BmiResult extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar:AppBar(title:Text('비만도 계산기')),
+      body:Center(
+        child:Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children:<Widget>[
+            Text( // TODO : 수정할 부분(글자)
+              '정상',
+              style:TextStyle(fontSize:36),
+            ),
+          ],
+        ),
+      )
+    );
   }
 }
 
