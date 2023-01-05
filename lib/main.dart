@@ -28,6 +28,9 @@ class _BmiMainState extends State<BmiMain> {
       appBar:AppBar(
         title:Text('Bmi Calculator'),
       ),
+      body: Container(
+        padding:const EdgeInsets.all(16.0),
+      )
     );
   }
 }
