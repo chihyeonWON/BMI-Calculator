@@ -22,6 +22,8 @@ class BmiMain extends StatefulWidget {
 }
 
 class _BmiMainState extends State<BmiMain> {
+  final _formKey = GlobalKey<FormState>(); // 폼의 상태를 얻기 위한 키
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -51,6 +53,15 @@ class _BmiMainState extends State<BmiMain> {
                 ),
                 keyboardType: TextInputType.number, // 숫자만 입력할 수 있음
               ),
+              Container( // 버튼 여백,배치
+                margin:const EdgeInsets.only(top:16.0), // 위 쪽에만 16크기의 여백
+                alignment: Alignment.centerRight, // 오른쪽 가운데에 위치
+                child:ElevatedButton(
+                  onPressed: (){
+                  },
+                  child:Text('결과'),
+                ),
+              )
             ],
           ),
         ),
