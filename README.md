@@ -33,3 +33,10 @@
 키와 몸무게는 숫자만을 입력하는 기능으로 작성하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210717458-14d91a8d-0bdb-4baa-9e4e-ced043164f2d.png)
+
+#### 결과 버튼 생성
+```
+폼에 입력된 키와 몸무게 값을 검증하고 검증한 결과를 바탕으로 화면을 이동시키는 결과 확인 버튼을 생성하였습니다.
+아직까지는 검증 로직을 작성하지 않아 아무것도 동작하지 않는 버튼입니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210718891-2556dd56-b34b-4ea3-a0f0-8feec589d081.png)
