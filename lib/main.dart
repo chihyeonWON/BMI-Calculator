@@ -72,6 +72,11 @@ class _BmiMainState extends State<BmiMain> {
 
 // 두 번째 페이지
 class BmiResult extends StatelessWidget {
+  final double height; // 키
+  final double weight; // 몸무게
+
+  BmiResult(this.height, this.weight); // 키와 몸무게를 받는 생성자
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold();
