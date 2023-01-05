@@ -19,3 +19,10 @@
                  Icon : 결과와 함께 보여줄 아이콘
                  Navigator : 화면 전환용 클래스
 ```
+
+#### 화면 구성
+```
+화면은 크게 2개로 구성, 키와 몸무게를 입력받는 StatefulWidget으로 작성된 첫 번째 화면과
+입력받은 값으로 Bmi를 계산한 후 아이콘과 글자로 결과를 보여주는 StatelessWidget으로 작성된 두 번째 화면
+```
+![image](https://user-images.githubusercontent.com/58906858/210713779-05867828-5755-47d5-94d1-ac03b607797d.png)
