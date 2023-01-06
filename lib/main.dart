@@ -73,7 +73,7 @@ class _BmiMainState extends State<BmiMain> {
                   if(value!.trim().isEmpty) {
                     return '몸무게를 입력하세요';
                   }
-                  return '몸무게를 입력하세요';
+                  return null;
                 },
               ),
               Container( // 버튼 여백,배치
@@ -81,6 +81,15 @@ class _BmiMainState extends State<BmiMain> {
                 alignment: Alignment.centerRight, // 오른쪽 가운데에 위치
                 child:ElevatedButton(
                   onPressed: (){
+                    if(_formKey.currentState!.validate()) { // 키와 몸무게 값이 검증되었다면 화면 이동
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => BmiResult(
+                              double.parse(_heightController.text.trim()),
+                              double.parse(_weightContoller.text.trim()))),
+                      );
+                    }
                   },
                   child:Text('결과'),
                 ),
