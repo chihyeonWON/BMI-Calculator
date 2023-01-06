@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: BmiResult(173, 65),
+      home: BmiMain(),
     );
   }
 }
@@ -23,8 +23,17 @@ class BmiMain extends StatefulWidget {
 
 class _BmiMainState extends State<BmiMain> {
   final _formKey = GlobalKey<FormState>(); // 폼의 상태를 얻기 위한 키
-  
+
+  final _heightController = TextEditingController(); // 키 컨트롤러 객체
+  final _weightContoller = TextEditingController(); // 몸무게 컨트롤러 객체
+
   @override
+  void dispose() {
+    _heightController.dispose(); // 다 사용한 컨트롤러 해제
+    _weightContoller.dispose(); // 다 사용한 컨트롤러 해제
+    super.dispose();
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar:AppBar(
