@@ -50,7 +50,14 @@ class _BmiMainState extends State<BmiMain> {
                   border:OutlineInputBorder(),
                   hintText:'키', // placeholder 키
                 ),
+                controller: _heightController, // 키 컨트롤러 연결
                 keyboardType: TextInputType.number, // 숫자만 입력할 수 있음
+                validator: (value) {
+                  if (value!.trim().isEmpty) {
+                    return '키를 입력해 주세요';
+                  }
+                  return null;
+                },
               ),
               SizedBox(
                 height:16.0,
@@ -60,7 +67,14 @@ class _BmiMainState extends State<BmiMain> {
                   border:OutlineInputBorder(),
                   hintText:'몸무게', // placeholder 몸무게
                 ),
+                controller: _weightContoller,
                 keyboardType: TextInputType.number, // 숫자만 입력할 수 있음
+                validator: (value) {
+                  if(value!.trim().isEmpty) {
+                    return '몸무게를 입력하세요';
+                  }
+                  return null;
+                },
               ),
               Container( // 버튼 여백,배치
                 margin:const EdgeInsets.only(top:16.0), // 위 쪽에만 16크기의 여백
