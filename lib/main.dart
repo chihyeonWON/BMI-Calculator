@@ -73,7 +73,7 @@ class _BmiMainState extends State<BmiMain> {
                   if(value!.trim().isEmpty) {
                     return '몸무게를 입력하세요';
                   }
-                  return null;
+                  return '몸무게를 입력하세요';
                 },
               ),
               Container( // 버튼 여백,배치
