@@ -61,4 +61,10 @@ bmi 계산 결과 값에 따라 정상, 저체중, 과체중
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210721887-9c215730-779e-40b1-93df-b80d966f492e.png)
 
+#### 입력한 키와 몸무게 값을 얻는 컨트롤러 작성
+```
+TextFormField 위젯에 입력된 값을 가져오기 위해 TextEditingController 클래스를 사용합니다.
+키와 몸무게 컨트롤러를 각각 생성합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210928546-0ad14b3e-4d31-4b1b-a86a-d87e56479dc8.png)
 
