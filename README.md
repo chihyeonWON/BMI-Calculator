@@ -72,6 +72,15 @@ TextFormField 위젯에 입력된 값을 가져오기 위해 TextEditingControll
 ```
 앞에서 생성한 컨트롤러를 키와 몸무게 입력필드 위젯에 각각 연결합니다.
 validator 프로퍼티에 입력값을 검증하고 에러 메시지를 반환하도록 작성할 수 있습니다.
+키나 몸무게 둘 중에 입력이 안된 필드가 있다면 입력을 요구하는 문구가 발생합니다.
 ```
-![image](https://user-images.githubusercontent.com/58906858/210931948-f4f40b98-05dc-4fc6-a1d0-05fa77fa4cfd.png)
+![image](https://user-images.githubusercontent.com/58906858/210936000-80600183-872a-49ac-8375-4dd9675325ba.png)
+
+#### 결과 버튼 클릭 시 화면 이동과 값 전달
+```
+결과 버튼 클릭 시 키와 몸무게가 입력되었는 지 검증한 후 이상이 없을 경우
+키, 몸무게 값과 함께 2번째 화면으로 이동합니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210936140-1afb3633-cc6c-41ad-a818-e87504e90bc6.png)
+
 
