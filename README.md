@@ -68,3 +68,10 @@ TextFormField 위젯에 입력된 값을 가져오기 위해 TextEditingControll
 ```
 ![image](https://user-images.githubusercontent.com/58906858/210928546-0ad14b3e-4d31-4b1b-a86a-d87e56479dc8.png)
 
+#### TextFormField 위젯과 컨트롤러 연결
+```
+앞에서 생성한 컨트롤러를 키와 몸무게 입력필드 위젯에 각각 연결합니다.
+validator 프로퍼티에 입력값을 검증하고 에러 메시지를 반환하도록 작성할 수 있습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/210931948-f4f40b98-05dc-4fc6-a1d0-05fa77fa4cfd.png)
+
