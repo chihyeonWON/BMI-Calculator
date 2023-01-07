@@ -96,3 +96,11 @@ bmi 값에 따라 결과 문자를 표시하는 _calcBmi 메서드 생성하였�
 bmi 값에 따라 과체중, 저체중, 정상, 1단계, 2단계, 고도 비만으로 결과를 표시합니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211131656-839e6507-2ed0-45f0-af44-44394828df64.png)
+
+#### bmi 계산 결과에 따른 결과 문자열 출력
+```
+앞서 생성한 _calcBmi 메서드를 Text 위젯에 추가하여 bmi 계산 결과에 따라 문자열이 달리 출릭되도록 하였습니다.
+키 : 173cm 몸무게 100 을 기입하고 결과버튼을 눌렀을 때의 bmi 계산 결과는 33.4~ 이고 이는 
+2단계 비만에 해당하므로 이 문자열을 출력하였습니다.
+```
+![image](https://user-images.githubusercontent.com/58906858/211131946-fd113255-c662-40cc-9e51-ac63fdcad655.png)
