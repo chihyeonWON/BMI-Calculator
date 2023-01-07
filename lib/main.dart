@@ -109,6 +109,44 @@ class BmiResult extends StatelessWidget {
 
   BmiResult(this.height, this.weight); // 키와 몸무게를 받는 생성자
   
+  String _calcBmi(double bmi) { // bmi 값에 따라 결과 문자 표시
+    var result = '저체중';
+    if(bmi >= 35) {
+      result = '고도 비만';
+    } else if(bmi >= 30){
+      result = '2단계 비만';
+    } else if(bmi >= 25){
+      result = '1단계 비만';
+    } else if(bmi >= 23){
+      result = '과체중';
+    } else if(bmi >= 18.5){
+      result = '정상';
+    }
+    return result;
+  }
+
+  Widget _buildIcon(double bmi) {
+    if(bmi>=23) { // 과체중일 때 매우 실망한 빨강색 아이콘 출력
+      return Icon(
+        Icons.sentiment_very_dissatisfied,
+        color:Colors.red,
+        size: 100,
+      );
+    } else if(bmi>=18.5) { // 정상 체중일 때 만족한 초록색 아이콘 출력
+      return Icon(
+        Icons.sentiment_satisfied,
+        color: Colors.green,
+        size: 100,
+      );
+    } else { // 저체중일 때 실망한 오렌지색 아이콘 출력
+      return Icon(
+        Icons.sentiment_dissatisfied,
+        color:Colors.orange,
+        size: 100,
+      );
+    }
+  }
+  
   @override
   Widget build(BuildContext context) {
     final bmi = weight / ((height / 100) * (height / 100));
@@ -121,7 +159,7 @@ class BmiResult extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children:<Widget>[
             Text( // TODO : 수정할 부분(글자)
-              '정상',
+              _calcBmi(bmi), // bmi 계산 결과에 따른 결과 문자열
               style:TextStyle(fontSize:36),
             ),
             SizedBox(
