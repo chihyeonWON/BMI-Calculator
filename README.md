@@ -104,3 +104,11 @@ bmi 값에 따라 과체중, 저체중, 정상, 1단계, 2단계, 고도 비만�
 2단계 비만에 해당하므로 이 문자열을 출력하였습니다.
 ```
 ![image](https://user-images.githubusercontent.com/58906858/211131946-fd113255-c662-40cc-9e51-ac63fdcad655.png)
+
+#### Bmi 값에 따라 결과 아이콘을 표시하는 메서드 추가
+```
+bmi 값에 따라 결과 아이콘을 표시하는 _buildIcon 메서드를 생성하였습니다.
+bmi 값에 따라 아이콘의 모양과 색깔이 달라집니다. 
+저체중 - 오렌지색, 정상 - 초록색, 과체중 - 빨강색
+```
+![image](https://user-images.githubusercontent.com/58906858/211132117-5b915cce-07a7-45a7-b9e7-a8cabc58f3c1.png)
