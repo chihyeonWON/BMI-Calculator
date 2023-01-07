@@ -3,7 +3,7 @@
 ```
 개발 툴 : Flutter
 개발 언어 : Dart
-개발 일시 : 2023-01-05 ~
+개발 일시 : 2023-01-05 ~ 2023-01-07
 개발자 : Won Chi Hyeon
 ```
 
@@ -19,6 +19,11 @@
                  Icon : 결과와 함께 보여줄 아이콘
                  Navigator : 화면 전환용 클래스
 ```
+![image](https://user-images.githubusercontent.com/58906858/211132423-7b05fe0b-70fd-470b-96f5-a86bd6c1dbb3.png)
+![image](https://user-images.githubusercontent.com/58906858/211132450-f01152a9-c483-4547-9113-4aa06618172c.png)
+          
+
+
 
 #### 화면 구성
 ```
